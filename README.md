@@ -1,3 +1,4 @@
-# CSCE 791: Seminar on Advances in Computing
+# CSCE 791: Seminar in Advances in Computing
 
-- Class Time: 2:20pm - 3:10pm Friday
+- Loation: Storey Innovation Center 1400
+- Class Time: Friday 2:20pm - 3:10pm 
