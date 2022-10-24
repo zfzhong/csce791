@@ -368,10 +368,34 @@ I believe logic reasoning can be more widely used in learning, and learning can 
 \subsection{Q \& A}
 At the end of the talk, I asked one question:
 \begin{enumerate}
+  
 \item Since many researchers are trying to use machine learning tools to solve math test problems, I think it is a topic that logic reasoning should be combined with machine learning. I asked him for comments. I asked the question simply because a machine can not verify the correctness of its solution to a math problem without knowing the math logic behind that problem.\\ \\
 In his response, I believe that he talked about how it's been done: giving the machine a set of examples to train a solver, and then applying the solver to another set of problems. He also talked about the pros and cons.\\
 
 
 \end{enumerate}
+
+
+\newpage
+\section{Talk on October 21, 2022}
+
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: & Harnessing Mean Field Game and Physics-Informed Deep Learning for Emerging Transportation Modeling\\
+\textbf{Speaker:} & Dr. Xuan (Sharon) Di \\
+\end{tabularx}
+
+\subsection{Review}
+Dr. Di introduced her work on designing optimal controls for autonomous vehicles. There are several levels of abstraction in her work. First, she used certain models to represent real world problems with traffic and routing assumptions. Second, she formulated optimization problems based on these models, and solved these optimization problems subsequently. 
+
+Later she introduced her work that employed machine learning tools to solve transportation problems. On particular point is that she believes incorporating physical logic into machine learning will help achieve better results. She evaluated her work with real traffic data. 
+
+He talk was very theoretical with many formulas and equations. The high level ideas of her work were easy to understand, but I could not really get these math abstraction and modeling. 
+
+
+
+\subsection{Q \& A}
+Since her model involves traffic balancing and best route selection, I asked if she considered extreme scenarios where a single factor (distance or time, for example) might be significantly important than any other factors. 
+
+She said that was already taken care by her model, because in her model the weight on each factor is adjustable. If she wants to favor one factor, she will just increase the weight of that factor in her model.
 
 \end{document} 
