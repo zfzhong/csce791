@@ -422,4 +422,22 @@ Since I am quite new to the research Dr. Matolak was talking about, I asked two 
 
 He introduced briefly current research with respect to different applications (commercial, military, etc). He mentioned that it's slow to put new design into reality because of safety concerns: People tends to be very conservative introducing new technology into this area since it requires not only changes in physical devices but also software updates, and any of which might cause safety issues.
 
+\newpage
+\section{Talk on November 4, 2022}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: & Learning Object Detection from Repeated Traversals\\
+\textbf{Speaker:} & Dr. Kilian Weinberger\\
+\end{tabularx}
+
+\subsection{Review}
+
+Dr. Weinberger introduced his work on improving autonomous driving by machine learning techniques. Specifically, he pointed out that if a car is used in the same location multiple times, it should act wisely, realizing that it has come to the location before. 
+
+His approach is to leverage and learn from repetition by allowing a neural network to save some of its activations in a geo-referenced database which can be retrieved later on. This approach builds a rich dataset that aid object detection in the the same location. For example, it is possible to recognize objects from far way even if these objects are only perceived by a few pixels or LiDAR points. 
+
+He further showed that it is possible to completely bootstrap an object detection classifier only based on repetition. He claimed that his approach has the potential to drastically improve the accuracy and safety of self-driving cars, enable them for sparsely populated areas, and allow them to adapt naturally to their local environment over time.
+
+In general, Dr. Weinberger's talk is about leverage repetition to improve detecting objects for self-driving cars. He solved the problem quite nicely and I don't have much doubt in it. 
+
+
 \end{document} 
