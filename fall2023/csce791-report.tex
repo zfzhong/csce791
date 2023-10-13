@@ -107,9 +107,86 @@ A lot of mathematical formulas were introduced in the talk. I didn't grasp the d
 \newpage
 \section{Talk on September 15, 2023}
 \begin{tabularx} {\textwidth}{r X}
-\textbf{Topic}: & xxx\\
-\textbf{Speaker:} & Dr. yyy\\
+\textbf{Topic}: & Trustworthy Artificial Intelligence Using Knowledge-powered CREST Framework \\
+\textbf{Speaker:} & Dr. Manas Gaur\\
 \end{tabularx}
+
+Dr. Gaur introduced his Knowledge-powered CREST Framework for helping Large Language Models (LLM) evolve to better human lives. He pointed out that LLMs's understanding of language, while impressive, is actually shallow. He then argued that LLMs would never approximate human intelligence if trained on language alone.
+
+To this end, he proposed the CREST framework that would help LLM evolve better. The CREST framework includes features named Consistency, Reliability, Explainability, etc. He spent a fair amount of time introducing the details of each feature and how to evaluate these features with respect to LLMs.
+
+I didn't get much details of each of the features. I feel the CREST framework is quite needed and useful in developing LLMs.
+
+
+
+\newpage
+\section{Talk on September 22, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: & Towards Automotive Radar Networks for Enhanced Detection/Cognition \\
+\textbf{Speaker:} & Dr. Sumit Roy\\
+\end{tabularx}
+
+Dr. Roy started his talk by introducing traditional signal processing techniques which has been widely used together with data collected by TI AWR radars to identify the movement of objects. He then pointed out that multi-radar interference could be a big issue in data processing. He then continued to introducing the challenges of applying radar to the autonomous driving context.
+
+He introduced his research work on Vehicular SAR, a system that brings low-cost target detection and localization. He presented both simulation result and experiment result to validate the effectiveness of his proposal.
+
+There are some interesting details in his talk. For example, how they improve the time complexity of their algorithm to make it applicable to scenarios which require  real-time processing.
+
+\newpage
+\section{Talk on September 29, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: & Bring IoT into Daily Life \\
+\textbf{Speaker:} & Taiting Lu\\
+\end{tabularx}
+
+A Ph.D. student Taiting Liu from Penn State University gave a talk about his research projects on IoT devices. He introduced three projects: OmniRing, EARFace, and iBall.
+
+The OminiRing project is designed for sensing human finger motions. It has wide applications, such as sign language recognition. The innovation part is that this ring has many sensors (MCU, IMU, etc) integrated into a very tiny ring-like device of a weight less than 3g. He showed a video demo where a hand with three rings can capture almost every tiny motions of each finger.
+
+The EARFace project is to detect human facial expression based on a tiny device that can be placed in human's ears. The rationale behind is that facial expression usually triggers vibrations which can be detected in the ear canal. The EARFace includes an in-ear acoustic sensor which collects the vibration data. They feed the data into a machine learning model which extracts features of 8 different facial expressions. Results show that EARFace can recognize these 8 facial expressions accurately.
+
+The last project is iBall, which is designed to track the cricket ball motions. The iBall is equipped with IMU sensors which helps track the 3D trajectory and speed of the ball.
+
+He went pretty fast without jumping into detailed implementations. I asked one question concerning the OmniRing: what's the optimal number of rings should one wear in order to achieve good results in tracking finger motions? He responded that with just one ring it would work fairly well, but 3 rings are optimal in order to track subtle motions.
+
+
+\newpage
+\section{Talk on October 6, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: & Designing Quantum Programming Languages with Types \\
+\textbf{Speaker:} & Frank (Peng) Fu\\
+\end{tabularx}
+
+Dr. Fu spent about 10 minutes introducing the motivations for designing quantum programming languages. He gave several examples of the application of quantum computing to justify the claim that it's the right time to think about quantum programming. For example, with quantum algorithm, factorizing big integers would be very feasible. 
+
+He then pointed out his focus for the talk is about how to design a high-level programming language for quantum circuits. He also threw out the question why types are important in designing the programming language: to ensure type checking and maintaining invariants. He introduced basic typing rules which are generally true, and a type checker which evaluates  programs and does type checking. He also introduced some fancy types: linear type, dependent type, and type with modalities.
+
+He went on to introduce types for quantum computing: Bit, Qubit, and Multi-qubit. He introduced the property that a Qubit is resource and can not be duplicated, Qubit should be initialized before use, and Qubit should be discarded explicitly at the end. He also introduced the unitary operation for Qubits.
+
+He ran out of time and quickly wrapped up for the talk. But it's also interesting to learn the basic concepts of Qubits and operations.
+
+When he was introducing the idealized typing rules, I asked one question: I believe these rules are generally true for any programing paradigm, not necessarily associated with the quantum programing context. He agreed. 
+
+
+\newpage
+\section{Talk on October 13, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: & Real-time Computing for Cyberphysical Systems \\
+\textbf{Speaker:} & Dr. Yi Wang\\
+\end{tabularx}
+
+At the beginning of this talk, Dr. Wang directly introduced his research interests: Multiphysics Reduced Order Modeling, Data Analytics, and Real-time Computing for Cyber-physical Systems. He then introduced each area one by one.
+
+The first field is Multiphysics Reduced Order Modeling. It's quite theoretical work. He explained the Equation-based Model Order Reduction in details. He introduced one example where there were over one million equations to solve, and with the reduction they can instead solve an equation system consisting of only 24 equations. He also introduced Data-driven and Surrogate Models.
+
+He went on to introduce his research on Data Analytics, which involves massive computation. He gave an example of testing an aircraft flying in the space. When the aircraft is flying in the air, data from multi-source are collecting in real-time and be analyzing at real-time to send feedback to the pilot. I think the example give the audience an impression how data analytics is applied in real applications. He also introduced how data analytics and be employed for fault detection and diagnosis.
+
+He finally introduced the third research field: Real-time Computing for Cyberphysical Systems. The application he introduced is autonomous car, where the focus is on real-time machine learning for resilient autonomous systems. He showed a demo of leader-follower control system, and went on to discuss the cyber-security issue with manufacturing systems. He also introduced a project which tries to decongestion traffic, and a project that detects abnormal behavior at real-time. He introduced several other projects including path planning for robotics, rail track inspection, etc. I believe the research challenge here is to collect data and process data in real-time, and make real-time decisions. 
+
+Finally, he introduced a project about perception for unmanned maritime systems. He explained the challenge of identifying object on the sea: lighting condition, dynamic environment, etc. He showed a video about navigating his wireless-controlled boats on the lake. 
+
+I asked one question: is it possible to detect object moving under the water? He responded that their purpose is to identify small static objects.
+
 
 
 
