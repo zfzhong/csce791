@@ -209,6 +209,28 @@ Finally, he introduced his research work on eavesdropping via lidar sensor. Spec
 I asked one question: for characterizing the liquid such as olive oil, is it possible for a person with a some training to characterize correctly by eye-looking? His response was that they did the investigation by inviting many people to do the experiment and the result was that human's eye-looking characterization usually got wrong.
 
 
+\newpage
+\section{Talk on November 3, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: &Data Annotation for Pervasive Sensing Systems: Challenges and Opportunities\\
+\textbf{Speaker:} & Dr. Sandip Chakraborty\\
+\end{tabularx}
+
+Dr. Chakraborty started the talk by introducing multimodal sensing. He pointed out that in this research field people assume that the data they used in their research were annotated. He then jumped into the problem of annotating data efficiently. Have gave a concrete example that annotating 1000 image with two labels each might take 4 hours. He also pointed out that it's generally true that source data with similar annotations might be very different from different modalities.
+
+He then posed the problem of how to automate annotating sensor streams. Traditionally people use video modality, which is computationally expensive and privacy invasive. He proposed to build acoustic signature for a sense, based on the fact that it's quite practical to detect activities with certain granularity.  The proposed method is to detect changes in IMU due to physical activity and check corresponding acoustic signatures and detect activities from the acoustic signatures. The proposed method is practical because that IMU can help detect precise activities, and there is a rich resource to collect acoustic signatures from youtube.
+
+The proposed method is called LASO, which achieved great accuracy in two environments: kitchen environment and workshop environment. 
+
+He then introduced his work to solve another challenge: user to activity association. In a scenario where some people are doing cooking and chopping, how to identify that who is cooking?
+
+The proposed framework is called Acconotate, which exploits the acoustic gap in the audio. Detect the change in IMU data, detect acoustic gaps, and then search for user who entered acoustic gap and use the audio-based activity recognition module to perform activity association. He also discussed how to annotate the unlabeled IMU data. 
+Acconate achieved accuracy of 82\% for a workshop environment and 98\% for a kitchen environment. 
+
+He then continued to introducing Human-in-the-loop Annotation. He threw out the problem that the annotation might not exactly reflect the activities in the scene. He also spent some time introducing explainability of annotations. 
+
+I asked one question: what are the reasons that in evaluation two environment (kitchen, workshop) are chosen? What are the challenges if the proposed solutions are applied to environments other than kitchen or workshop? He's response was that these two environments (kitchen and workshop) generates rich sound that would help identify activities, and they are looking for other environments that would be suitable for the evaluation.
+
 
 
 \end{document} 
