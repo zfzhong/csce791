@@ -231,6 +231,51 @@ He then continued to introducing Human-in-the-loop Annotation. He threw out the 
 
 I asked one question: what are the reasons that in evaluation two environment (kitchen, workshop) are chosen? What are the challenges if the proposed solutions are applied to environments other than kitchen or workshop? He's response was that these two environments (kitchen and workshop) generates rich sound that would help identify activities, and they are looking for other environments that would be suitable for the evaluation.
 
+\newpage
+\section{Talk on November 10, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: &Neuromorphic Computing: Bridging the gap between Nanoelectronics, Neuroscience and Machine Learning\\
+\textbf{Speaker:} & Dr. Abhronil Sengupta\\
+\end{tabularx}
+
+Dr. Sengupta started his talk by pointing out that the gap between computation resources required by modern large AI models and the energy required by human brains, and this motivate his project on neuromorphic computing. He then continued to introduce the algorithmic challenges, for example, resource constraints in edge computing, uncertainty, etc.
+
+He pointed out that biological neurons can be mimicked by spintronic neuron but subject to the von-Neumann bottleneck: memory access and memory leakage due to data transfer between the SRAM synapse module and the neural computation core constitute a significant portion of the total energy consumption. 
+
+Dr. Sengupta then introduced their research work on training spiking neural networks (SNN), including STDP learning, backprop in SNN, and ANN-SNN conversion. This neuroevolutionary guided hybrid SNN training achieved 28\% latency improvement on ImageNet dataset in contrast to state-of-the-art conversion based approaches and incurred 2.9x less memory and 42x less running time than BPTT based framework. He spent some time on interpreting the results.
+
+He introduced another research project: SSNs as Dynamical Systems, which involves Equilibrium Propagation and Modern Hopfield Networks. His research is to merge the two energy-based models while maintaining their convergence criterion. They proposed a method called sequence learning using equilibrium propagation, which integrated modern hopfied network with convergent RNN to substantially improve model accuracy ( over 9\% in IMDB dataset).
+
+Finally, he introduced his research work on neuromorphical hardware design, aiming to improve energy efficiency in computing. These devices include FeFETs, Ferromagnetic Devices, Ferroelectric Devices, etc. He also discussed a bit about  Bayesian Deep Learning, neuroscience inspiration, etc. 
+
+
+
+\newpage
+\section{Talk on November 17, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: &Towards the Internet of Sustainable Living Trees with Batteryless Computing\\
+\textbf{Speaker:} & Dr. VP Nguyen\\
+\end{tabularx}
+
+Prof. Nguyen gave an introduction to the Internet of Trillions Things, which is a huge network with a large number of smart devices. He brought out the general goal of the research work in his lab:  building computational things that are reliable, autonomous, sustainable, and scalable for health and environmental monitoring. 
+
+He briefly introduced his past research on Internet of Medical Things: teeth monitoring, blood pressure monitoring, pain monitoring, epileptic seizure monitoring, etc.
+He then threw out a question: can we build wearables to monitor the tree health? One idea is to have a device that attach to the tree body to measure factors that affect the growth of the trees. He justified the motivation of this research by stating that the world needs to produce more food in the next 50 years to feed the growing population and thus plants would become more important with this regard.
+
+Observation from energy and water consumed by agriculture indicated that there's efficiency issue. For example, the traditional irrigation system has efficiency of 40\%. He proposed ``precision agriculture'': with water sensor, nutrient sensor, and environmental sensors to achieve better efficiency. John Deere, the leading agriculture company, has been using expensive sensors: moisture sensor (\$572), solar energy (\$187) for such purpose.  These devices are costly and do not capture signals directly from the body of plants.  He then introduced the sap flow sensors that monitor signals directly from the body of the plants. It's about \$2000 per piece and it relies on external battery. 
+
+He then introduced the proposed solution, which  had the following features : battery-free, biocompatible and implantable, intermittent computing, and LoRa communication. The sensors are powered by the energy from the wind. He introduced the design of the sensors: two sensors are integrated into one piece to achieve certain purposes. He also introduced their work to build a small circuit to replace a giant VSP Potentiostat device. 
+
+Another challenge is the communication from sensors to the base station. Dr. Nguyen called it IoTree Communication, which aimed to realize low-power communication protocol with reasonable communication distance. The device they chosen was LoRaWan. 
+
+Energy Harvesting is also a challenge. They chosen wind as the source of energy because wind is available almost everywhere at any time (both day time and night time). They had a battery-free design: wind turbine, dc monitor, a harvesting circuit, etc. Wind with a speed of 2 meter per second  would create enough voltage for the system.
+
+Together, a IoTree system is built. 
+
+I asked two questions: 1) how long would the energy harvesting device last in the outdoor environment in spite of rains? How much does that device cost? He responded that it's only a month since they deploy the system, and the total cost is \$42.
+
+
+
 
 
 \end{document} 
