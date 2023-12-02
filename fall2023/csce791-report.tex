@@ -31,6 +31,8 @@
 \usepackage{tabularx}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage[mathscr]{eucal}
+
 %\usepackage{ctex}
 
 %SetFonts
@@ -276,6 +278,24 @@ I asked two questions: 1) how long would the energy harvesting device last in th
 
 
 
+\newpage
+\section{Talk on December 1, 2023}
+\begin{tabularx} {\textwidth}{r X}
+\textbf{Topic}: &From Neural Certificates to Certificate-carrying RL in Large-Scale Autonomy Design\\
+\textbf{Speaker:} & Dr. Chuchu Fan\\
+\end{tabularx}
 
+
+Dr. Chu started by introducing some research topics in her lab at MIT. These research fields include sensing and perception, decision and planning, control and act, etc. Generally, her research is about developing techniques for the design, analysis, and verification of safe autonomous systems.
+
+She then started to introduce the difficult problems in safe navigation of robotics in the context of a large fleet of agents (thousands). She then threw out the concept of certificate functions from control theory to prove desired system properties. Some example functions are Lyapunov Function, Barrier Function, and Contraction Metric. Her proposal is to develop Neural Control Certificates that achieve similar purposes. 
+
+She then presented the Graph Control Barrier Function (GCBF), where a multi-agent system is defined as a graph that consists of edge features and node features and a class-$\mathcal{K}$ function. Based on that, an GCBF learning architecture is designed to train agents for navigation. 
+
+In simulation experiments, a great number of agents were put in an controlled environment and the results showed that majority of agents can successfully navigate to their destinations. 
+
+She then continue to introduce her research on Epigraph form Constrained OCP. She also give a good explanation on the advantage of using epigraph form, since it avoids the linear scaling problem.
+
+I asked one question concerning the navigation of agents: how realistic is it to apply the algorithm to real applications and what would be the consequence if some agents fail to arrive their destinations. Her response was that they want to show the effectiveness of the algorithm and they are hoping to implement the algorithm in real applications.
 
 \end{document} 
